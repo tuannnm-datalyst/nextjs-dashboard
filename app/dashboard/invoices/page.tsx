@@ -38,7 +38,6 @@ export default async function Page({
       </div>
 
        <Suspense key={query + currentPage} fallback={<InvoicesTableSkeleton />}>
-         {/* @ts-expect-error Server Component */}
         <Table query={query} currentPage={currentPage} />
       </Suspense>
 
